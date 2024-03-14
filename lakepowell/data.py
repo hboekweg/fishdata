@@ -40,7 +40,8 @@ class Data():
                         'RN':'UP', 'WC':'LO', 'AT':'LO', 'HA':'UP','NW':'LO',
                         'HC':'UP', 'CR':'LO', 'GB':'UP', 'DM':'LO', 'LC':'LO',
                         'NK':'UP', 'AI':'LO', 'RC':'UP', 'HI':'UP', 'KC':'UP'}
-        fish_df['Location']= fish_df['Site'].map(site_loc)
+        
+        fish_df['Location']= fish_df['Site']
 
         self.dataframes["fish_data"] = fish_df
 
